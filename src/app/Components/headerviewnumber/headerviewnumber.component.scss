@@ -1,0 +1,40 @@
+.header{
+    height: 42px;
+    border-radius: 8px ;
+    border: 0px 0px 1px 0px;
+    border-bottom: 1px solid  var(--border-color);
+    background-color: var(--white);
+    padding: 10px 16px;
+}
+.header .icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    transition: .5s color ease-in-out;
+    color: var(--text-header-color);
+
+    
+}
+.header .icon:hover{
+    color: var( --buttom-hover);
+}
+.header .nameTitle{
+    gap: 8px;
+}
+.header .nameTitle .icon{
+    background-color: var(--bg-icon);
+    color: var(--text-icon);
+
+}
+.header .nameTitle h3{
+    font-family: Neo Sans Arabic;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+
+}

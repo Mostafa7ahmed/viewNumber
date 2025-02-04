@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("../public/Fonts/NeoSansArabic.ttf") format("truetype");
+}
+
+:root{
+    --background-color: #F8F8F8;
+    --white: #fff;
+    --text-header-color: #1C1C28;
+    --text-secondary-color: #6B7280;
+    --bg-button-color: #48B29A;
+    --header-table-color: #F4F5F7;
+    --border-table-color: #0000001A;
+    --button-pagination-color: #3E97FF;
+     --bg-icon:#3E97FF1A;
+     --text-icon: #3E97FF;
+     --buttom-hover: #FF4B55;
+     --border-color :#ECF0F5;
+  
+}
+body {
+  font-family: "Neo Sans Arabic", sans-serif;
+}
+
+ul{
+    list-style: none !important;
+}
+
+a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+}
+p, h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
