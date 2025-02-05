@@ -1,3 +1,6 @@
+
+![Application Screenshot](https://ibb.co/dwN0hgH4)  
+
 # View Number  
 
 A web-based application for viewing and managing user information, including financial data, assignments, and related statistics.  
