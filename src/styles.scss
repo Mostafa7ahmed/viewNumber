@@ -1,4 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Define the theme object.
+$viewNumber-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette,
+  ),
+  density: (
+    scale: 0,
+  )
+));
+
+
+:root {
+  @include mat.all-component-themes($viewNumber-theme);
+}
+
+
 @font-face {
   font-family: "Neo Sans Arabic";
   src: url("../public/Fonts/NeoSansArabic.ttf") format("truetype");
@@ -6,6 +28,7 @@
 
 :root{
     --background-color: #F8F8F8;
+    --bg-body:#57575721;
     --white: #fff;
     --text-header-color: #1C1C28;
     --text-secondary-color: #6B7280;
@@ -34,3 +57,5 @@ a {
 p, h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

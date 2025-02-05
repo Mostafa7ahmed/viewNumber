@@ -1,0 +1,75 @@
+<div class="tableData">
+
+    <div class="table-container">
+        <div class="table-header">
+            <div class="column">العميل</div>
+            <div class="column">تاريخ التعيين</div>
+            <div class="column">تاريخ الإلغاء</div>
+            <div class="column">المسؤول عن التعيين</div>
+            <div class="column">الحقائق الدولية</div>
+            <div class="column">الحقائق المحلية</div>
+            <div class="column">المبلغ</div>
+        </div>
+
+       @for (client of clients; track $index) {
+        <div class="table-body">
+            <div class="row">
+                <div class="column d-flex gap-1">
+                    <img [src]="client.image" alt="" width="28px">
+                    <p [matTooltip]="client.company ">{{client.company| truncate :15}}</p>
+                </div>
+                <div class="column"><span>{{client.orderDate}}</span></div>
+                <div class="column"><span>{{client.deliveryDate}}</span></div>
+                <div class="column">
+                    <p [matTooltip]="client.customerName ">{{client.customerName| truncate :15}}</p>
+                </div>
+
+                <div class="column"><span>{{client.customerID}}</span></div>
+                <div class="column"><span>{{client.orderNumber}}</span></div>
+
+                <div class="column"> <span>{{client.amount | customCurrency}}</span></div>
+            </div>
+        </div>
+        
+         
+       }
+
+
+    </div>
+
+    <div class="pagination   d-flex align-items-center justify-content-between pt-1">
+
+        <div class="left d-flex align-items-center gap-3">
+            <p>عرض</p>
+
+            <select name="" id="">
+
+                @for (selectOption of selectOptions; track $index) {
+                    <option [value]="selectOption" [selected] ="$first">{{selectOption}}</option>
+                  
+                }
+            </select>
+            <p>   من أصل  <span  class="mx-2">55</span></p>
+        </div>
+
+        <div class="right ">
+            <ul class="paginationlist">
+                <li><i class="fa-solid fa-chevron-right"></i></li>
+                <li>5</li>
+                <li>4</li>
+                <li>3</li>
+                <li>2</li>
+                <li class="active">1</li>
+                <li><i class="fa-solid fa-chevron-left"></i> </li>
+              </ul>
+        
+    
+        </div>
+
+    </div>
+
+
+
+
+
+</div>

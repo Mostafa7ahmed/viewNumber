@@ -1,0 +1,43 @@
+.footer{
+    background-color: white !important;
+    height: 55px;
+    border: 1px solid #ECF0F5;
+    border-radius: 6px;
+}
+
+.infoUser p{
+    font-family: Neo Sans Arabic;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.35px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #6B7280
+    
+}
+.imagesUser img{
+    border: 0.4px solid #0000001A;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 50%;
+}
+.infoUser h6{
+    font-family: Neo Sans Arabic;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.55px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.infoUser .dots{
+    width: 6px;
+    height: 6px;
+    padding: 6px;
+    background-color: #E8E8E8;
+    border-radius: 50%;
+   
+    
+
+}

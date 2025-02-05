@@ -1,0 +1,33 @@
+<div class="popup">
+    <div class="viewnumber"  [class.show]="isVisible">
+
+        <app-headerviewnumber  (closeEvent)="isVisible = false" />
+
+        <div class="content">
+
+            <app-informationview />
+
+            <app-tabledata/>
+
+
+          <app-footerviewnmber/>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+        @if(!isVisible){
+            <div class="openModel" >
+                <button type="button" class="btn btn-primary" (click)="toggleView()">
+                    عرض المحتوي
+                </button>
+            </div>
+        }
+
+</div>

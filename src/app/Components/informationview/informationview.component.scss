@@ -1,0 +1,232 @@
+.infoCompany{
+    min-height: 188px;
+    padding: 12px ;
+    border-radius: 6px;
+    border: 1px solid  var(--border-color);
+    background-color: var(--white);
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.infoCompany .headerInfo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.infoCompany .right {
+    position: relative;
+}
+.right .option{
+    width: 123px;
+    left: 0;
+    box-shadow: 0px 6px 12px 0px #ABBED14D;
+    border: 1px solid #EAECF0;
+    padding: 6px;
+    background-color: var(--white);
+    border-radius: 4px ;
+    position: absolute !important;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.5s ease, height 0.5s ease;
+
+
+
+}
+.right .option.show{
+    opacity: 1;
+    height:80px;
+}
+.right .option .selectOption p{
+    font-family: Neo Sans Arabic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--text-header-color);
+
+
+}
+.right .option .selectOption{
+    font-size: 16px;
+    color: var(--text-secondary-color) ;
+
+}
+.right .option .selectOption.CancelApointment p ,
+.right .option .selectOption.CancelApointment i{
+    color: var(--buttom-hover) !important;
+
+}
+.infoCompany .right .icon{
+    cursor: pointer;
+}
+.infoCompany .right .icon i{
+    color: var(--text-secondary-color);
+}
+
+.infoCompany .headerInfo h4{
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+
+
+}
+.infoCompany .headerInfo .limitation{
+    width: 100px;
+    height:28px;
+    padding: 6px 16px 6px 16px;
+    border-radius: 4px;
+    background: var(--bg-button-color);
+    display: flex;
+    align-items: center;
+
+
+}
+.headerInfo .limitation span{
+    font-family: Neo Sans Arabic;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+
+
+
+
+}
+.contentInformation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contentInformation .cardInfo{
+    width: 172px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+}
+.cardInfo p{
+    font-family: Neo Sans Arabic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.74px;
+    text-align: center;
+    color: var(--text-secondary-color);
+
+
+}
+
+.cardInfo h5{
+    font-family: Neo Sans Arabic;
+    font-size: 14px;
+    font-weight: 400;
+
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--text-header-color);
+
+    text-wrap: nowrap;
+
+
+}
+
+
+.cardInfo h6{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-wrap: nowrap;
+    color: var(--text-header-color);
+
+
+}
+.cardInfo h6 span{
+    font-family: Neo Sans Arabic;
+    font-size: 14px;
+    font-weight: 400;
+    text-wrap: nowrap;
+    color: var(--text-header-color);
+
+
+}
+.line{
+   
+    height: 35px;
+    width: 1.8px;
+    background-color:#DFDFDF;
+    border-radius: 3px;
+}
+
+
+// Media queries
+
+@media only screen and (max-width: 850px) {
+    .contentInformation{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+ 
+    .contentInformation .cardInfo{
+        width: 200px;
+        padding: 20px 20px;
+
+        gap: 8px;
+    
+    }
+    .line{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .contentInformation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+ 
+   
+}
+
+@media only screen and (max-width: 500px) {
+
+    .contentInformation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .contentInformation .cardInfo{
+        width: 50%;
+
+        padding: 20px 20px;
+        gap: 8px;
+    
+    }
+ 
+   
+}
+@media only screen and (max-width: 400px) {
+
+
+    .contentInformation .cardInfo{
+        width: 50%;
+
+        padding: 20px 20px;
+        gap: 8px;
+    
+    }
+ 
+   
+}

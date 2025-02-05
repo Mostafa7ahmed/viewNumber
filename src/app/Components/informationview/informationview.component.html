@@ -1,0 +1,87 @@
+<div class="infoCompany">
+    <div class="headerInfo d-flex justify-content-between align-items-center">
+       
+        <div class="left  d-flex gap-3">
+            <h4>{{ companyData.phone }}</h4>
+            <div class="limitation">
+                <span>قيد الإستخدام</span>
+    
+            </div>
+        </div>
+        <div class="right px-2">
+            <div class="icon"  (click)="toggOption()">
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+            <div class="option d-flex flex-column gap-3" [class.show]="isOption">
+                <div class="selectOption d-flex gap-1">
+
+                    <span><i class="fa-solid fa-pen mx-2"></i> </span>
+                    <p> تعديل الرقم</p>
+                </div>
+               
+                <div class="selectOption CancelApointment d-flex gap-1">
+                    <span><i class="fa-solid fa-comment-slash mx-2"></i> </span>
+                    <p> إلغاء التعيين</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="contentInformation">
+        <div class="cardInfo">
+            <p>اسم البروتوكول</p>
+            <h5  [matTooltip]="companyData.protocolName">{{ companyData.protocolName }}</h5>
+        </div>
+         <div class="line"></div>
+         
+         @for ( companyData of companyData.companyInfo; track $index) {
+            <div class="cardInfo">
+                <p> {{companyData.label}}</p>
+                <div class="title d-flex align-items-center gap-2" >
+                    <img [src]="companyData.icon" alt="" width="28px">
+                    <h5  [matTooltip]="companyData.value ">{{ companyData.value | truncate:20 }}</h5>
+    
+                </div>
+             </div> 
+             <div class="line" ></div>
+       
+
+            }
+
+
+
+        <div class="cardInfo">
+            <p>عدد الإمتدادات</p>
+            <h6 >{{companyData.extensions}}</h6>
+        </div>
+        
+        <div class="cardInfo">
+            <p>تاريخ آخر شحنة </p>
+            <h6  >{{companyData.lastShipment |  date: 'dd/MM/yyyy' }}</h6>
+        </div>
+        <div class="line"></div>
+
+        <div class="cardInfo">
+            <p>الرصيد الحالي</p>
+            <h6><span>{{ companyData.balance | customCurrency }}</span></h6>
+        </div>
+        <div class="line"></div>
+
+        <div class="cardInfo">
+            <p>الرصيد المستخدم للعميل الحالي</p>
+            <h6><span>{{ companyData.usedBalanceClient | customCurrency }}</span></h6>
+
+        </div>
+        <div class="line"></div>
+
+        <div class="cardInfo">
+            <p>الرصيد المستخدم للرقم ككل</p>
+            <h6><span>{{ companyData.usedBalanceTotal| customCurrency }}</span></h6>
+        </div>
+
+    </div>
+
+
+</div>

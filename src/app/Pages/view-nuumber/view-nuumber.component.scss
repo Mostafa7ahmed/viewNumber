@@ -1,0 +1,36 @@
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    background: var(--bg-body);
+    position: relative;
+
+}
+.viewnumber{
+    width: 892px;
+    gap: 10px;
+    border-radius: 8px ;
+    background: var(--background-color);
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease, height 0.5s ease;
+
+}
+
+
+.viewnumber.show {
+    opacity: 1;
+}
+
+.viewnumber .content{
+    padding: 10px;
+}
+
+
+.openModel{
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-headerviewnumber',
@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderviewnumberComponent {
 
+  @Output() closeEvent = new EventEmitter<void>();
+
+  closeView() {
+    this.closeEvent.emit(); 
+  }
 }
