@@ -28,8 +28,6 @@ A web-based application for viewing and managing user information, including fin
   - HTML, SCSS, TypeScript  
   - Angular framework  
 
-- **Backend**: [If applicable, mention here]  
-- **Database**: [If applicable, mention here]  
 
 ## How to Use  
 
