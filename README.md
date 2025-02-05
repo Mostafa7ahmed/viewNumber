@@ -1,27 +1,74 @@
-# ViewNumber
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+# View Number  
 
-## Development server
+![Features](./public/Images/task.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A web-based application for viewing and managing user information, including financial data, assignments, and related statistics.  
 
-## Code scaffolding
+## Features  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **User Details**: Displays comprehensive user information, including:  
+  - Name and protocol information  
+  - Country and affiliated organization  
+  - Financial balances and credits  
+  - Account creation and update dates  
 
-## Build
+- **Transaction History**: A table view of detailed financial and assignment-related data, featuring:  
+  - Transaction amounts  
+  - Responsible individuals and designation dates  
+  - Relevant agreements (local and international)  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Pagination**: Easily navigate through the records using a clean and responsive pagination interface.  
 
-## Running unit tests
+- **Responsive Design**: The interface adapts to different screen sizes for an optimal user experience.  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used  
 
-## Running end-to-end tests
+- **Frontend**:  
+  - HTML, SCSS, TypeScript  
+  - Angular framework  
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Backend**: [If applicable, mention here]  
+- **Database**: [If applicable, mention here]  
 
-## Further help
+## How to Use  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Mostafa7ahmed/viewNumber.git  
+
+# View Number  
+
+A web-based application for viewing and managing user information, including financial data, assignments, and related statistics.  
+
+## Features  
+
+- **User Details**: Displays comprehensive user information, including:  
+  - Name and protocol information  
+  - Country and affiliated organization  
+  - Financial balances and credits  
+  - Account creation and update dates  
+
+- **Transaction History**: A table view of detailed financial and assignment-related data, featuring:  
+  - Transaction amounts  
+  - Responsible individuals and designation dates  
+  - Relevant agreements (local and international)  
+
+- **Pagination**: Easily navigate through the records using a clean and responsive pagination interface.  
+
+- **Responsive Design**: The interface adapts to different screen sizes for an optimal user experience.  
+
+## Technologies Used  
+
+- **Frontend**:  
+  - HTML, SCSS, TypeScript  
+  - Angular framework  
+
+- **Backend**: [If applicable, mention here]  
+- **Database**: [If applicable, mention here]  
+
+## How to Use  
+
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Mostafa7ahmed/viewNumber.git  
