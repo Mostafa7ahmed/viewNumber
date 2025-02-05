@@ -1,27 +1,35 @@
-# ViewNumber
+# View Number  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+A web-based application for viewing and managing user information, including financial data, assignments, and related statistics.  
 
-## Development server
+## Features  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **User Details**: Displays comprehensive user information, including:  
+  - Name and protocol information  
+  - Country and affiliated organization  
+  - Financial balances and credits  
+  - Account creation and update dates  
 
-## Code scaffolding
+- **Transaction History**: A table view of detailed financial and assignment-related data, featuring:  
+  - Transaction amounts  
+  - Responsible individuals and designation dates  
+  - Relevant agreements (local and international)  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Pagination**: Easily navigate through the records using a clean and responsive pagination interface.  
 
-## Build
+- **Responsive Design**: The interface adapts to different screen sizes for an optimal user experience.  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used  
 
-## Running unit tests
+- **Frontend**:  
+  - HTML, SCSS, TypeScript  
+  - Angular framework  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Backend**: [If applicable, mention here]  
+- **Database**: [If applicable, mention here]  
 
-## Running end-to-end tests
+## How to Use  
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Mostafa7ahmed/viewNumber.git  
